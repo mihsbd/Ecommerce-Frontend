@@ -1,0 +1,9 @@
+Changed by me::
+
+cart.model.ts       >   product: any,       >> INSTEAD OF   >   product: ProductModelServer,
+
+cart.SERVICE.ts:
+Line No- 59         >   let info: any = localStorage.getItem('cart');
+Line No- 200        >   resObj: any = {};       >> USED EXTRA BY ME
+Line No- 202/203    >   subscribe((res)         >> INSTEAD OF   >   subscribe((res: {success: boolean})
+Line No- 211        >   subscribe((data: any)   >> INSTEAD OF   >   subscribe((data: OrderResponse)
